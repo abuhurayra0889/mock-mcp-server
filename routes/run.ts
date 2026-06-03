@@ -30,7 +30,7 @@ app.post("/run", authMiddleware, async (c) => {
     status: "ok",
     agent: "mock-summarizer-v1",
     output: `Mock response for: "${body.input.user_message}"`,
-    tokens_used: 55,
+    tokens_used: 44,
     echoed: {
       ct_org_id: ctOrgId,
       received_context: body.input.context ?? null,
